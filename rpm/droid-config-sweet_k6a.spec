@@ -15,6 +15,10 @@
 # bigger ratio if seen fit. Values are with 0.25 increments.
 %define pixel_ratio 1.0
 
+# Device-specific ofono configuration
+Provides: ofono-configs
+Obsoletes: ofono-configs-mer
+
 %include droid-configs-device/droid-configs.inc
 %include patterns/patterns-sailfish-device-adaptation-sweet_k6a.inc
 %include patterns/patterns-sailfish-device-configuration-sweet_k6a.inc
